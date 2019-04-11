@@ -27,6 +27,7 @@ fi
 # it at runtime with a ConfigMap
 echo "Updating Settings File"
 cp config/settings.json .
+if [ -e config/APIKEY.txt ] ; then cp config/APIKEY.txt . ; fi
 sed -i "s/DB_HOST/${DB_HOST}/" settings.json
 sed -i "s/DB_DBID/${DB_DBID}/" settings.json
 sed -i "s/DB_PASS/${DB_PASS}/" settings.json
