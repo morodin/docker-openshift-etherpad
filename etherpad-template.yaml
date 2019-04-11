@@ -36,7 +36,7 @@ parameters:
   required: true
 - name: ETHERPAD_IMAGE
   description: Etherpad Image to be used
-  value: "quay.io/wkulhanek/etherpad:latest"
+  value: "dockerhub.fokus.fraunhofer.de:5000/carsten.tittel/etherpad:latest"
   required: true
 objects:
 
